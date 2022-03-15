@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Justin Vincent</title>
 </head>
-<body>
+<body aria-labelledby="body">
+    <h1 role="heading" aria-level="1" id="body">justin vincent</h1>
     <header class="cv__header">
+
         <div class="top-bar">
             <div class="top-bar__message">
                 <img src="./src/img/icons/#" alt="illustration de lettre postale">
                 Bienvenu sur mon CV en ligne
             </div>
         </div>
+
         <nav class="main-nav" aria-label="Main">
+            <h2 class="main-nav__title">Menu</h2>
             <ul class="main-nav__list">
                 <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">Compétences</a>
+                    <a href="#" class="main-nav__link">Boite à outils</a>
                 </li>
                 <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Métier</a>
@@ -29,6 +33,9 @@
                 </li>
                 <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Passions</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Projets</a>
                 </li>
                 <li class="main-nav__item">
                     <a href="#" class="main-nav__link">
@@ -45,97 +52,204 @@
                 </li>
             </ul>
         </nav>
+
     </header>
     <main class="cv__main">
 
         <section class="cv__banner" aria-labelledby="banner">
             <img src="./src/img/banniere.jpg" alt="photo d'un bureau" class="banner__background">
-            <h1 role="heading" aria-level="1" id="banner">justin vincent</h1>
+            <h2 role="heading" aria-level="2" id="banner">justin vincent</h2>
             <p class="banner__first-name banner__text">justin</p>
             <p class="banner__name banner__text">vincent</p>
         </section>
 
-        <section class="cv__justin-vincent" aria-labelledby="justin-vincent">
-            <h3 class="justin-vincent__title" role="heading" aria-level="2" id="justin-vincent">développeur web</h3>
-            <p class="justin-vincent__text">Bienvenu sur mon Site Web !</p>
-            <p class="justin-vincent__text">Je m’appel Justin Vincent, jeune Belge de 20 ans passioné par l’univers du Design et Développement Web.</p>
-            <p class="justin-vincent__text">Apprenez-en plus sur mes compétences développées aux cours de mes études ainsi que de mes premiers projets professionnels, sur mon metier et ses pratiques ainsi que sur mes passions qui me permettent de m’évader.</p>
+        <section class="cv__intro" aria-labelledby="intro">
+            <h4 class="intro__title" role="heading" aria-level="3" id="intro">Présentation</h4>
+            <p class="intro__text">Bienvenu sur mon Site Web !</p>
+            <p class="intro__text">Je m’appel Justin Vincent, jeune Belge de 20 ans passioné par l’univers du Design et Développement Web.</p>
+            <p class="intro__text">Apprenez-en plus sur mes compétences développées aux cours de mes études ainsi que de mes premiers projets professionnels, sur mon metier et ses pratiques ainsi que sur mes passions qui me permettent de m’évader.</p>
         </section>
 
-        <section class="cv__competences" aria-labelledby="competences">
-            <h3 class="competences__title" role="heading" aria-level="2" id="competences">Mes compétences</h3>
-            <ul class="competences__list">
-                <li class="competences__link">
-                    <img src="./src/img/logos/html.png" alt="logo HTML" class="competences__images">
-                    <p class="competences__text-type">développement</p>
-                    <p class="competences__text-name">HTML</p>
+        <section class="cv__outils" aria-labelledby="outils">
+            <h4 class="outils__title" role="heading" aria-level="3" id="outils">Ma boite à outils</h4>
+            <ul class="outils__list">
+                <li class="outils__link">
+                    <img src="./src/img/logos/html.png" alt="logo HTML" class="outils__images">
+                    <p class="outils__text-type">développement</p>
+                    <p class="outils__text-name">HTML</p>
                 </li>
             </ul>
-            <ul class="competences__list">
-                <li class="competences__link">
-                    <img src="./src/img/logos/CSS.png" alt="logo HTML" class="competences__images">
-                    <p class="competences__text-type">développement</p>
-                    <p class="competences__text-name">CSS</p>
+            <ul class="outils__list">
+                <li class="outils__link">
+                    <img src="./src/img/logos/CSS.png" alt="logo HTML" class="outils__images">
+                    <p class="outils__text-type">développement</p>
+                    <p class="outils__text-name">CSS</p>
                 </li>
             </ul>
-            <ul class="competences__list">
-                <li class="competences__link">
-                    <img src="./src/img/logos/xd.png" alt="logo HTML" class="competences__images">
-                    <p class="competences__text-type">développement</p>
-                    <p class="competences__text-name">adobe XD</p>
+            <ul class="outils__list">
+                <li class="outils__link">
+                    <img src="./src/img/logos/xd.png" alt="logo HTML" class="outils__images">
+                    <p class="outils__text-type">développement</p>
+                    <p class="outils__text-name">adobe XD</p>
                 </li>
             </ul>
-            <ul class="competences__list">
-                <li class="competences__link">
-                    <img src="./src/img/logos/php.png" alt="logo HTML" class="competences__images">
-                    <p class="competences__text-type">développement</p>
-                    <p class="competences__text-name">php</p>
+            <ul class="outils__list">
+                <li class="outils__link">
+                    <img src="./src/img/logos/php.png" alt="logo HTML" class="outils__images">
+                    <p class="outils__text-type">développement</p>
+                    <p class="outils__text-name">php</p>
                 </li>
             </ul>
-            <ul class="competences__list">
-                <li class="competences__link">
-                    <img src="./src/img/logos/html.png" alt="logo HTML" class="competences__images">
-                    <p class="competences__text-type">développement</p>
-                    <p class="competences__text-name">adobe illustrator</p>
+            <ul class="outils__list">
+                <li class="outils__link">
+                    <img src="./src/img/logos/html.png" alt="logo HTML" class="outils__images">
+                    <p class="outils__text-type">développement</p>
+                    <p class="outils__text-name">adobe illustrator</p>
                 </li>
             </ul>
-            <button class="competences__button" type="button">Voir plus</button>
+            <button class="outils__button" type="button">Voir plus</button>
         </section>
+
         <section class="cv__metier" aria-labelledby="metier">
-            <h2 class="metier__title" role="heading" aria-level="2" id="metier">metier</h2>
+            <h2 class="metier__title" role="heading" aria-level="2" id="metier">Mon métier</h2>
 
-            <div class="metier__intro">
-                <h2 class="intro__title">Ma Vision du</h2>
-                <h2 class="intro__title">Developpement</h2>
-                <h2 class="intro__title">Web</h2>
+            <section class="metier__intro">
+                <h3 class="intro__title">Ma Vision du <br>Développement <br>Web</h3>
                 <p class="intro__text">Le Design et le Développement Web font partie de mon metier et j’en suis ravis. C’est un univers a part totalement passionnant.</p>
                 <button class="intro__button" type="button">Ma vision</button>
                 <img src="./src/img/illustrations/developpement.svg" alt="illustration du développement web" class="intro__image">
-            </div>
+            </section>
 
-            <div class="metier__vision-design">
-                <h2 class="vision-design__title">Ma vision du Design</h2>
-                <p class="vision-design__text">Le webdesign est l’association de deux mots, web et design qui signifient littéralement « toile » et « dessiner », il est donc l’action de dessiner pour le web. </br>Le webdesign n’est pas qu’un simple habillage graphique. Il est un véritable outil de communication qui facilite l’expérience utilisateur au travers une ergonomie conviviale, transmet clairement et de la façon la plus pertinente le message marketing. Il donne une véritable valeur ajoutée à l’information en professionnalisant l’image.</p>
-            </div>
+            <section class="metier__vision-design">
+                <h4 class="vision-design__title">Ma vision du Design</h4>
+                <p class="vision-design__text">Le webdesign est l’association de deux mots, web et design qui signifient littéralement « toile » et « dessiner », il est donc l’action de dessiner pour le web. <br>Le webdesign n’est pas qu’un simple habillage graphique. Il est un véritable outil de communication qui facilite l’expérience utilisateur au travers une ergonomie conviviale, transmet clairement et de la façon la plus pertinente le message marketing. Il donne une véritable valeur ajoutée à l’information en professionnalisant l’image.</p>
+            </section>
 
-            <div class="metier__animation">
-                <h2 class="animation__title">Donner</h2>
-                <h2 class="animation__title">De la vie</h2>
-                <h2 class="animation__title">Aux projets</h2>
+            <section class="metier__animation">
+                <h3 class="animation__title">Donner <br>De la vie <br>Aux projets</h3>
                 <p class="animation__text">De nos jours un site web qui n’a pas d’animations ne sort pas du lot. Ces petits détails font toute la différence.</p>
                 <button class="animation__button" type="button">Voir exemples</button>
                 <img src="./src/img/illustrations/javascript.svg" alt="illustration du développement web" class="animation__image">
-            </div>
+            </section>
 
-            <div class="metier__vision-dev">
-                <h2 class="vision-dev__title">Ma vision du Développement</h2>
+            <section class="metier__vision-dev">
+                <h4 class="vision-dev__title">Ma vision du Développement</h4>
                 <p class="vison-dev__text">Le développement web est une discipline qui consiste, par l’usage de langages de programmation web, à programmer des sites web ou applications web destinés à être publiés sur des serveurs. Le métier de développeur web demande de savoir manier des outils tels que les CMS ou les frameworks . De plus, maîtriser les langages tels que le HTML et CSS, le JavaScript ou bien le PHP est nécessaire pour être en mesure de répondre aux besoins du client. Coder fait partie du quotidien d’un développeur et ceci peut être très satisfaisant.</p>
-            </div>
+            </section>
 
         </section>
+
+        <section class="cv__avis" aria-labelledby="avis">
+            <h2 class="avis__title" role="heading" aria-level="2" id="avis">Quelques commentaires</h2>
+            <img src="./src/quelques_commentaires.jpg" alt="grille de photos des personnes qui ont laissé un commentaire" class="avis__image">
+            <div class="avis__slider">
+                <ul class="slider__list">
+                    <li class="slider__item">
+                        <img src="" alt="photo de Jhon" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">JHON</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Maxime" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">MAXIME</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Lucie" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">LUCIE</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Greg" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">GREG</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Mathéo" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">MATHEO</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Jordan" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">JORDAN</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Simon" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">SIMON</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Xavier" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">XAVIER</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Marie" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">MARIE</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Pierre" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">PIERRE</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Aurélie" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">AURELIE</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                    <li class="slider__item">
+                        <img src="" alt="photo de Alice" class="slider__image">
+                        <div class="slider__text">
+                            <p class="slider__name">ALICE</p>
+                            <p class="slider__avis">Passionné et investit dans son travail de développement Web.
+                                Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        section.cv__
+
     </main>
     <footer class="cv__footer">
     </footer>
+
+    <script src="./src/js/main.js"></script>
 </body>
-<script src="./src/js/main.js"></script>
 </html>
