@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    font-family: "Suisse Int'l",sans-serif;
+    font-size: 1.375em; /*22/16*/
+}
+h1{
+    display: none;
+}
+h2, h3, h4{
+    font-family: "Media Sans Extended",sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+.top-bar__message{
+    text-align: center;
+    font-size: 0.5em;/*11/22*/
+    margin: 0.818181818181818em 0 0.818181818181818em 0;/*9/11*/
+}
+/*.top-bar__message:before{
+    content: url("../img/icons/heart.svg");
+}*/
+ .navigation{
+     display: flex;
+     justify-content: space-between;
+     font-size: 0.909090909090909em;/*20/22*/
+     padding: 0 2.45em 0 2.45em;/*49/20*/ /*960/20*/
+ /*    background-image: url("../img/bannierecut.jpg");*/
+ /*    background-repeat: no-repeat;*/
+ /*    background-size: cover;*/
+ }
+
+ /* ---------- header navigation ----------- */
+.main-nav__title{
+    display: none;
+}
+.main-nav{
+    background-image: url("../img/bannierecut.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 39.7278em;
+}
+.main-nav__banner{
+    width: 100%;
+    display: inline-block;
+}
+.main-nav__list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+.main-nav__item{
+    padding: 1.5em 0 1.5em 0;/*30/20*/
+    color: white;
+}
+.main-nav__item:not(:first-child){
+    padding-left: 0.6em;/*12/20*/
+}
+.main-nav__item:not(:last-child){
+    padding-right: 0.6em;
+}
+ .logo{
+     display: flex;
+ }
+ .main-nav__link{
+     text-decoration: none;
+ }
