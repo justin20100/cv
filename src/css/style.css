@@ -1,72 +1,284 @@
-body{
-    margin: 0;
-    font-family: "Suisse Int'l",sans-serif;
-    font-size: 1.375em; /*22/16*/
-}
-h1{
-    display: none;
-}
-h2, h3, h4{
-    font-family: "Media Sans Extended",sans-serif;
-}
-a{
-    text-decoration: none;
-}
-a:visited{
-    color: white;
-}
-.top-bar__message{
-    text-align: center;
-    font-size: 0.5em;/*11/22*/
-    margin: 0.818181818181818em 0 0.818181818181818em 0;/*9/11*/
-}
-/*.top-bar__message:before{
-    content: url("../img/icons/heart.svg");
-}*/
- .navigation{
-     display: flex;
-     justify-content: space-between;
-     font-size: 0.909090909090909em;/*20/22*/
-     padding: 0 2.45em 0 2.45em;/*49/20*/ /*960/20*/
- /*    background-image: url("../img/bannierecut.jpg");*/
- /*    background-repeat: no-repeat;*/
- /*    background-size: cover;*/
- }
-
- /* ---------- header navigation ----------- */
-.main-nav__title{
-    display: none;
-}
-.main-nav{
-    background-image: url("../img/bannierecut.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-bottom: 39.7278em;
-}
-.main-nav__banner{
-    width: 100%;
-    display: inline-block;
-}
-.main-nav__list{
-    display: flex;
-    justify-content: center;
-    list-style: none;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* --------- fin du reset -------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
- }
-.main-nav__item{
-    padding: 1.5em 0 1.5em 0;/*30/20*/
-    color: white;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-.main-nav__item:not(:first-child){
-    padding-left: 0.6em;/*12/20*/
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
-.main-nav__item:not(:last-child){
-    padding-right: 0.6em;
+body {
+    line-height: 1;
 }
- .logo{
-     display: flex;
- }
- .main-nav__link{
-     text-decoration: none;
- }
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* --------- fin du reset -------- */
+/* --------- typos -------- */
+
+/* media sans extended */
+@font-face {
+    font-family: mediasansblackitalic;
+    src: url("../typo/Media_sans_extended/mediasansextended-blackitalic.otf") format("opentype");
+}
+
+/* suisse intl */
+@font-face {
+    font-family: suisseintllight;
+    src: url("../typo/Suisse_Intl/Suisseintl-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: suisseintlbold;
+    src: url("../typo/Suisse_Intl/Suisseintl-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: suisseintlsemibold;
+    src: url("../typo/Suisse_Intl/Suisseintl-SemiBold.otf") format("opentype");
+}
+@font-face {
+    font-family: suisseintlmedium;
+    src: url("../typo/Suisse_Intl/Suisseintl-Medium.ttf") format("truetype");
+}
+
+/* --------- fin typos -------- */
+/* --------- feuille de style -------- */
+/* --------- general -------- */
+.hidden{
+    display: none;
+}
+body{
+    margin: 0 auto;
+}
+main{
+    margin: 0 auto;/* 100/16 */
+    max-width: 1440px;
+}
+p{
+    font-family: suisseintllight,sans-serif;
+    letter-spacing: 0.08em;
+}
+button{
+    background-color: #FBAF28;
+    border: none;
+    padding:  14px 18px ;
+    border-radius: 0.3125em;/* 5/16 */
+    cursor: pointer;
+    font-family: suisseintlbold,sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75em;/* 12/16 */
+}
+strong{
+    font-family: suisseintlsemibold;
+}
+h1,h2,h3,h4{
+    font-family: suisseintlbold,sans-serif;
+}
+h2{
+    font-size: 1.875em;/* 30/16 */
+}
+
+/* --------- header -------- */
+.header__container{
+    background-image: url("../img/bannierecut.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+.header__nav{
+    max-width: 1800px;
+}
+.header__steamer{
+    display: flex;
+    justify-content: center;
+    font-size: 0.5em;/* 11/22 */
+    color: black;
+    background-color: #fff;
+}
+.header__message{
+    padding: 0.81818em 0 0.81818em 0 ;/* 9/11 */
+}
+.header__logo{
+    width: 70px;
+    height: 70px;
+}
+.header__logo{
+    position: absolute;
+    left: 48%;
+}
+/* nav */
+.nav{
+    margin: 0 auto;
+    padding: 1.875em 2.5em;/* 30/18 */ /* 40/18 */
+    font-family: suisseintlmedium,sans-serif;
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+}
+.left .nav__item{
+    padding-right: 1.38889em;/* 18/25 */
+}
+.right .nav__item{
+    padding-left: 1.38889em;/* 18/25 */
+}
+/* name */
+.header__names{
+    margin-top: 25em;/* 600/18 */
+}
+.header__names p{
+    font-family: mediasansblackitalic,sans-serif;
+    font-size: 6.88889em;/* 124/18 */
+    padding-bottom: 0.20161em;/* 25/124 */
+    letter-spacing: 0;
+}
+.header__name{
+    padding-left: 0.16129em;/* 20/124 */
+}
+.header__firstname{
+    padding-left: 1.04839em;/* 130/124 */
+}
+.header{
+    margin-bottom: 5.625em;/* 90/16 */
+}
+/* --------- main -------- */
+/* intro */
+.presentation__intro{
+    width: 38.75em;/* 620/16 */
+    margin: 0 auto 9.375em auto;/* 150/16 */
+}
+.intro__title{
+    margin-bottom: 2.5em;/* 90/30 */
+}
+.intro__text:nth-child(1n){
+    margin-bottom: 2.72727em;/* 60/22 */
+}
+.intro__text{
+    line-height: 1.5;
+}
+/* tools */
+.presentation{
+    margin: 0 auto;
+    margin-bottom: 18.75em;/* 300/16 */
+}
+.presentation__tools{
+    margin: 0 3.125em 0 3.125em;/* 50/16 */
+}
+.tools__title{
+    margin-bottom: 2.83333em;/* 85/30 */
+}
+.tools__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.25em 2.5em 1.25em;/* 20/16 */ /* 40/16 */
+}
+.tools__img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #707070 solid 1px;
+    margin-bottom: 0.625em;/* 10/16 */
+}
+.tools__img img{
+    height: 70%;
+    width: 70%;
+}
+.tools__use{
+    font-size: 0.6875em;/* 11/16 */
+    margin-bottom: 0.18182em;/* 2/11 */
+}
+.tools__name{
+    font-family: suisseintlbold,sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75em;/* 12/16 */
+}
+.tools__button{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Web */
+.web{
+    margin: 0 3.125em 0 3.125em;
+}
+.web__intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10.625em;/* 170/16 */
+}
+.intro_title, .animation__title{
+    font-family: mediasansblackitalic,sans-serif;
+    font-size: 2.625em;/* 42/16 */
+    width: 400px;
+    margin-bottom: 0.83333em;/* 35/42 */
+}
+.intro__description, .animation__text{
+    font-size: 1.125em;/* 18/16 */
+    line-height: 1.5em;/*27/18*/
+    width: 349px;
+    margin-bottom: 2.22222em;/* 40/18 */
+}
+.web__design{
+    display: flex;
+    justify-content: center;
+}
+.design__container{
+    max-width: 700px;
+    margin-bottom: 8.75em;/* 140/16 */
+}
+.design__title{
+    font-size: 2.25em;/* 36/16 */
+    margin-bottom: 1.80556em;/* 65/36 */
+}
+.design__text{
+    font-size: 1.375em;/* 22/16 */
+    line-height: 31px;
+}
+
+.web__animation{
+    background-color: #F4F4F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em;/* 80/16 */
+}
+.animation__svg{
+    margin-right: 7.5em;/* 120/16 */
+}
