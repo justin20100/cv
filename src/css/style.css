@@ -100,8 +100,31 @@ button{
     font-family: suisseintlbold,sans-serif;
     color: black;
 }
+button:hover{
+    animation: yes 0.3s forwards;
+}
+@keyframes yes {
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-5px);
+    }
+    40%{
+        transform: translateY(5px);
+    }
+    60%{
+        transform: translateY(-5px);
+    }
+    80%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
 strong{
-    font-family: suisseintlsemibold;
+    font-family: suisseintlsemibold,sans-serif;
 }
 h1,h2,h3,h4{
     font-family: suisseintlbold,sans-serif;
@@ -130,6 +153,28 @@ h2{
 }
 .header__message{
     padding: 0.81818em 0 0.81818em 0 ;/* 9/11 */
+    animation: welcome 4s infinite;
+}
+@keyframes welcome {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-2500px);
+    }
+    26%{
+        opacity: 0;
+    }
+    27%{
+        transform: translateX(2500px);
+    }
+    45%{
+        opacity: 1;
+        transform: translateX(-10px);
+    }
+    55%{
+        transform: translateX(0px);
+    }
 }
 .header__logo{
     width: 70px;
@@ -496,7 +541,80 @@ h2{
     width: 100%;
     height: 297px;
 }
+/* -------- projects -------- */
+.projects{
+    margin: 0 3.125em 8.125em 3.125em;/* 130/16 */
+}
+.projects__title{
+    margin-bottom: 1.66667em;/* 60/36 */
+}
+.projects__list{
+    width: 100%;
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 15% 33% 16% 33%;
+}
+.projects__img{
+    width: 100%;
+}
+.projects__text{
+    font-family: suisseintlsemibold, sans-serif;
+    line-height: 1.24;
+    font-size: 0.875em;/* 14/16 */
+}
+.projects__hashtags{
+    font-family: suisseintlsemibold, sans-serif;
+    line-height: 1.24;
+    font-size: 0.875em;/* 14/16 */
+}
+/* -------- footer -------- */
+.footer{
+    width: 100%;
+    background-image: url("../img/bannierecut.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.7);
+}
+.footer__list{
+    font-size: 1.125em;/* 18/16 */
+    margin: 3em 0 6em;
+    font-family: suisseintlsemibold,sans-serif;
+    line-height: 1.24;
+}
+.footer__title{
+    font-family: suisseintllight,sans-serif;
+    font-size: 0.83333em ;/* 15/18 */
+    margin-bottom: 0.8em;
+    color: #b2b2b2;
+}
+.footer__item{
+    margin-bottom: 0.88889em;/* 16/18 */
+}
+.footer__link{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer__link:hover{
+    color: #FBAF28;
+}
 
 
+/* +++++++ animation ++++++++++ */
+.reveal{
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier( .5, 0, 0, 1);
+}
 
 
