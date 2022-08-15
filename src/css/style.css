@@ -59,26 +59,32 @@ table {
 /* suisse intl */
 @font-face {
     font-family: suisseintllight;
-    src: url("../typo/Suisse_Intl/Suisseintl-Light.otf") format("opentype");
+    src: url("../typo/suisse_intl/suisseintllight.otf") format("opentype");
 }
 @font-face {
     font-family: suisseintlbold;
-    src: url("../typo/Suisse_Intl/Suisseintl-Bold.otf") format("opentype");
+    src: url("../typo/suisse_intl/suisseintlbold.otf") format("opentype");
 }
 @font-face {
     font-family: suisseintlsemibold;
-    src: url("../typo/Suisse_Intl/Suisseintl-SemiBold.otf") format("opentype");
+    src: url("../typo/suisse_intl/suisseintlsemibold.otf") format("opentype");
 }
 @font-face {
     font-family: suisseintlmedium;
-    src: url("../typo/Suisse_Intl/Suisseintl-Medium.ttf") format("truetype");
+    src: url("../typo/suisse_intl/suisseintlmedium.ttf") format("truetype");
 }
 
 /* --------- fin typos -------- */
 /* --------- feuille de style -------- */
 /* --------- general -------- */
-.hidden{
-    display: none;
+html{
+    scroll-behavior: smooth;
+}
+.hidden {
+    position: absolute;
+    left: 0;
+    top: -10000px;
+    overflow: hidden;
 }
 body{
     margin: 0 auto;
@@ -200,6 +206,20 @@ h2{
 }
 .right .nav__item{
     padding-left: 1.38889em;/* 18/25 */
+}
+.nav__link{
+    color: #ffffff;
+    text-decoration: none;
+}
+.nav__link:hover{
+    color: #FBAF28;
+    position: relative;
+}
+.nav__link:hover:after{
+    content: "●";
+    position: absolute;
+    top: 20px;
+    right: 45%;
 }
 
 /* name */
@@ -532,14 +552,17 @@ h2{
     grid-auto-columns: max-content;
     overflow-x: auto;
     height: 300px;
+    scroll-behavior:smooth;
 }
 .gallery__item{
     width: 100%;
     height: 100%;
 }
 .gallery__img{
-    width: 100%;
     height: 297px;
+}
+.gallery__list:focus{
+    background-color: #fbaf28;
 }
 /* -------- projects -------- */
 .projects{
@@ -616,5 +639,3 @@ h2{
     transform: translateY(0);
     transition: 1s cubic-bezier( .5, 0, 0, 1);
 }
-
-

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#eec30c">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/img/logos/logo_fond.svg">
-    <title>J. Vincent Curriculum Vitae</title>
+    <title>CV Justin Vincent</title>
 </head>
 <body>
 <header class="header">
@@ -43,21 +43,22 @@
             </svg>
         </div>
         <nav class="header__nav nav">
+            <h2 class="nav__title hidden">Navigation principale</h2>
             <ul class="nav__list">
                 <li class="nav__item">
                     <ul class="nav__list left">
-                        <li class="nav__item">Presentation</li>
-                        <li class="nav__item">Boite a outils</li>
-                        <li class="nav__item">Metier</li>
-                        <li class="nav__item">Avis</li>
+                        <li class="nav__item"><a href="#presentation" class="nav__link">Presentation</a></li>
+                        <li class="nav__item"><a href="#outils" class="nav__link">Boite a outils</a></li>
+                        <li class="nav__item"><a href="#web" class="nav__link">Metier</a></li>
+                        <li class="nav__item"><a href="#comments" class="nav__link">Avis</a></li>
                     </ul>
                 </li>
                 <li class="nav__item">
                     <ul class="nav__list right">
-                        <li class="nav__item">Parcours scolaire</li>
-                        <li class="nav__item">Passions</li>
-                        <li class="nav__item">Projets</li>
-                        <li class="nav__item">Contactez moi</li>
+                        <li class="nav__item"><a href="#studies" class="nav__link">Parcours scolaire</a></li>
+                        <li class="nav__item"><a href="#hobbies" class="nav__link">Passions</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projets</a></li>
+                        <li class="nav__item"><a href="#footer" class="nav__link">Contactez moi</a></li>
                     </ul>
                 </li>
             </ul>
@@ -70,7 +71,7 @@
 </header>
 
 <main class="main">
-    <div class="presentation">
+    <div class="presentation" id="presentation">
         <section class="presentation__intro intro reveal">
             <h2 class="intro__title">Présentation</h2>
             <p class="intro__text">Bienvenu sur mon Site Web !
@@ -83,16 +84,16 @@
                 qui me permettent de
                 m’évader.</p>
         </section>
-        <section class="presentation__tools reveal">
+        <section class="presentation__tools reveal" id="outils">
             <h2 class="tools__title">Ma boite à outils</h2>
             <ul class="tools__list">
                 <li class="tools__item">
 
                     <div class="tools__img">
-                        <img src="./src/img/logos/php.svg" alt="">
+                        <img src="./src/img/logos/html.svg" alt="">
                     </div>
-                    <p class="tools__use">Back-end dev</p>
-                    <p class="tools__name">PHP</p>
+                    <p class="tools__use">Front-end dev</p>
+                    <p class="tools__name">HTML</p>
                 </li>
                 <li class="tools__item">
                     <div class="tools__img">
@@ -109,11 +110,12 @@
                     <p class="tools__name">Adobe XD</p>
                 </li>
                 <li class="tools__item">
+
                     <div class="tools__img">
-                        <img src="./src/img/logos/illustrator.svg" alt="">
+                        <img src="./src/img/logos/php.svg" alt="">
                     </div>
-                    <p class="tools__use">Illustration</p>
-                    <p class="tools__name">Adobe Illustrator</p>
+                    <p class="tools__use">Back-end dev</p>
+                    <p class="tools__name">PHP</p>
                 </li>
                 <li class="tools__item">
                     <div class="tools__img">
@@ -128,16 +130,16 @@
             </div>
         </section>
     </div>
-    <section class="web">
+    <section class="web" id="web">
         <div class="web__intro intro reveal">
             <div class="webflex__left">
-                <h2 class="intro_title">Ma vison du developpement web</h2>
-                <p class="intro__description">Le Design et le Développement Web font partie de mon metier et j’en suis
-                    ravis. C’est un univers a part totalement passionnant.</p>
+                <h2 class="intro_title">Ma vision du developpement web</h2>
+                <p class="intro__description">Le Design et le Développement Web font partie de mon métier et j’en suis
+                    ravi. C’est un univer à part totalement passionnant.</p>
                 <button class="intro__button">Voir plus</button>
             </div>
             <div class="webflex__right">
-                <svg xmlns="http://www.w3.org/2000/svg" width="653" height="474.298" viewBox="0 0 653 474.298">
+                <svg width="653" height="474.298" viewBox="0 0 653 474.298">
                     <g id="Calque_2" data-name="Calque 2" transform="translate(-46.277 -173.334)">
                         <g id="OBJECTS" transform="translate(46.277 173.334)">
                             <path id="Tracé_27" data-name="Tracé 27"
@@ -411,16 +413,15 @@
                         </g>
                     </g>
                 </svg>
-
             </div>
         </div>
         <div class="web__design design reveal">
             <div class="design__container">
-                <h2 class="design__title">Ma vision du Design</h2>
+                <h3 class="design__title">Ma vision du Design</h3>
                 <p class="design__text">Le webdesign est l’association de deux mots, web et design qui signifient
-                    littéralement « toile » et « dessiner », il est donc l’action de dessiner pour le web. <br>Le
+                    littéralement « toile » et « dessiner », il est donc l’action de dessiner pour le web. Le
                     webdesign n’est pas qu’un simple habillage graphique. Il est un véritable outil de communication qui
-                    facilite l’expérience utilisateur au travers une ergonomie conviviale, transmet clairement et de la
+                    facilite l’expérience utilisateur a travers une ergonomie conviviale qui permet de clairement transmettre de la
                     façon la plus pertinente le message marketing. Il donne une véritable valeur ajoutée à l’information
                     en
                     professionnalisant l’image.</p>
@@ -428,10 +429,9 @@
         </div>
         <div class="web__animation animation reveal">
             <div class="animation__left">
-                <h2 class="animation__title">Donner de la vie aux projets</h2>
+                <h3 class="animation__title">Donner de la vie aux projets</h3>
                 <p class="animation__text">De nos jours un site web qui n’a pas d’animations ne sort pas du lot. Ces
-                    petits
-                    détails font toute la différence.</p>
+                    petits détails font toute la différence et donne a l'utilisateur une certaine satisfaction.</p>
                 <button class="animation__button">Voir plus</button>
             </div>
             <div class="animation__right">
@@ -1176,20 +1176,14 @@
         </div>
         <div class="web__developement developement reveal">
             <div class="development__container">
-                <h2 class="developement__title">Ma vision du Developpement</h2>
+                <h3 class="developement__title">Ma vision du Développement</h3>
                 <p class="developement__text">Le développement web est une discipline qui consiste, par l’usage de
-                    langages
-                    de programmation web, à programmer des sites web ou applications web destinés à être publiés sur des
-                    serveurs. Le métier de développeur web demande de savoir manier des outils tels que les CMS ou les
-                    frameworks . De plus, maîtriser les langages tels que le HTML et CSS, le JavaScript ou bien le PHP
-                    est
-                    nécessaire pour être en mesure de répondre aux besoins du client. Coder fait partie du quotidien
-                    d’un
-                    développeur et ceci peut être très satisfaisant.</p>
+                    langages de programmation web, à programmer des sites web ou applications web destinés à être publiés sur des serveurs. Le métier de développeur web demande de savoir manier des outils tels que les CMS ou les frameworks. De plus, maîtriser des langages tels que le HTML, le CSS, JavaScript et PHP est nécessaire pour être en mesure de répondre aux besoins du client. Coder fait partie du quotidien d’un développeur et ceci peut être très satisfaisant.</p>
             </div>
         </div>
     </section>
-    <section class="comments">
+    <section class="comments" id="comments">
+        <h2 class="comments__title hidden">Quelques commentaires</h2>
         <div class="comments__container">
             <div class="comments__grid reveal">
                 <div class="comments__gridleft"><img src="./src/img/illustrations/comments_girdleft.png" alt=""></div>
@@ -1198,8 +1192,8 @@
             <div class="comments__illustration reveal">
                 <img alt="" src="./src/img/avis/montage.png">
                 <div>
-                    <h2 class="comments__title">Quelques</h2>
-                    <h2 class="comments__title">commentaires</h2>
+                    <p class="comments__title">Quelques</p>
+                    <p class="comments__title">commentaires</p>
                 </div>
             </div>
         </div>
@@ -1210,45 +1204,41 @@
                 <div class="comments__sliderright"><img src="./src/img/illustrations/comments_sliderright.png" alt="">
                 </div>
             </div>
-            <ul class="comments__list reveal">
+            <ul class="comments__list reveal slider">
                 <li class="comments__item">
                     <img src="./src/img/avis/avis_1.jpg" alt="" class="comments__img">
                     <div class="comments__text">
                         <p class="comments__name">Jhon</p>
                         <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro.</p>
                     </div>
                 </li>
                 <li class="comments__item comments__oposite">
                     <img src="./src/img/avis/avis_2.jpg" alt="" class="comments__img">
                     <div class="comments__text">
                         <p class="comments__name">Maxime</p>
-                        <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        <p class="comments__comment">Etudiant sérieux qui a réalisé un excellent stage cette année dans notre entreprise.</p>
                     </div>
                 </li>
                 <li class="comments__item">
                     <img src="./src/img/avis/avis_3.jpg" alt="" class="comments__img">
                     <div class="comments__text">
                         <p class="comments__name">Lucie</p>
-                        <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        <p class="comments__comment">Justin est un bon collègue qui peut faire la différence entre moment de travail et de rigolade aux bureaux.👍</p>
                     </div>
                 </li>
                 <li class="comments__item comments__oposite">
                     <img src="./src/img/avis/avis_4.jpg" alt="" class="comments__img">
                     <div class="comments__text">
                         <p class="comments__name">Greg</p>
-                        <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        <p class="comments__comment">Travail réalisé dans les temps et très propre. Je suis ravi du site réalisé pour mon restaurant.</p>
                     </div>
                 </li>
                 <li class="comments__item">
                     <img src="./src/img/avis/avis_5.jpg" alt="" class="comments__img">
                     <div class="comments__text">
                         <p class="comments__name">Matheo</p>
-                        <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        <p class="comments__comment">Merci pour  mon site d'ecommerce. Vendre des jeux videos n'a jamais été aussi simple.</p>
                     </div>
                 </li>
                 <li class="comments__item comments__oposite">
@@ -1263,54 +1253,41 @@
                     <img src="./src/img/avis/avis_7.jpg" alt="" class="comments__img">
                     <div class="comments__text">
                         <p class="comments__name">Simon</p>
-                        <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        <p class="comments__comment">Un plaisir de travailler aux coté de Justin durant son stage. 😜</p>
                     </div>
                 </li>
                 <li class="comments__item comments__oposite">
                     <img src="./src/img/avis/avis_8.jpg" alt="" class="comments__img">
                     <div class="comments__text">
                         <p class="comments__name">Xavier</p>
-                        <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        <p class="comments__comment">Ma galerie photo en ligne n'a jamais été aussi belle. Merci beaucoup.</p>
                     </div>
                 </li>
                 <li class="comments__item">
-                    <img src="./src/img/avis/avis_9.jpg" alt="" class="comments__img">
-                    <div class="comments__text">
-                        <p class="comments__name">Marie</p>
-                        <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
-                    </div>
-                </li>
-                <li class="comments__item comments__oposite">
                     <img src="./src/img/avis/avis_10.jpg" alt="" class="comments__img">
                     <div class="comments__text">
                         <p class="comments__name">Pierre</p>
-                        <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
-                    </div>
-                </li>
-                <li class="comments__item">
-                    <img src="./src/img/avis/avis_11.jpg" alt="" class="comments__img">
-                    <div class="comments__text">
-                        <p class="comments__name">Aurelie</p>
-                        <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        <p class="comments__comment">Cette restauration de site redonne une toute nouvelle image a notre boutique de skate.</p>
                     </div>
                 </li>
                 <li class="comments__item comments__oposite">
+                    <img src="./src/img/avis/avis_11.jpg" alt="" class="comments__img">
+                    <div class="comments__text">
+                        <p class="comments__name">Aurelie</p>
+                        <p class="comments__comment">Jeune développeur sérieux dans son travail. Recommande sans hésitations.</p>
+                    </div>
+                </li>
+                <li class="comments__item">
                     <img src="./src/img/avis/avis_12.jpg" alt="" class="comments__img">
                     <div class="comments__text">
                         <p class="comments__name">Alice</p>
-                        <p class="comments__comment">Passionné et investit dans son travail de développement Web.
-                            Je suis très satisfait du site qu’il a réalisé pour mon activité pro</p>
+                        <p class="comments__comment">Merci pour la réalisation du site de notre centre de formation. 😍</p>
                     </div>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="studies">
+    <section class="studies" id="studies">
         <h2 class="studies__title reveal">Parcours scolaire</h2>
         <div class="studies__grid">
             <div class="studies__top reveal">
@@ -1338,12 +1315,10 @@
                         <p class="studies__qualif">Bachelier en technique graphique option Web</p>
                     </div>
                     <div class="studies__text">
-                        <h3 class="studies__school">Haute ecole de la province de liege</h3>
-                        <p class="studies__description">La Hepl de Seraing est l’école ou j’ai étudié le développement
-                            web.</p>
-                        <p class="studies__description">Lors de ces trois années, J’ai appris des languages comme HTML,
-                            CSS,
-                            javascript, php, MySQL, … J’ai aussi développé des compétences graphiques</p>
+                        <h3 class="studies__school">Haute école de la province de liège</h3>
+                        <p class="studies__description">La Hepl de Seraing est l’école ou j’ai étudié et découvert le développement web.</p>
+                        <p class="studies__description">Lors de ces trois années, J’ai appris des languages comme le HTML,
+                            le CSS, javascript, php, MySQL,… J’ai aussi développé certaines compétences graphiques</p>
                         <button class="studies__button">Voir site</button>
                     </div>
                 </div>
@@ -1380,94 +1355,92 @@
                     </div>
                     <div class="studies__text">
                         <h3 class="studies__school">Institut Saint-Raphael Remouchamp</h3>
-                        <p class="studies__description">Dans cet établissement secondaire J’ai suivis des cours de
-                            multimedias (montages videos, illustrator et
-                            photoshop), des cours de programmation ou j’ai peu découvrir mon premier language de
-                            programmation qui était le python ainsi que des cours de systèmes et réseaux.</p>
+                        <p class="studies__description">Dans cet établissement secondaire J’ai suivi des cours de
+                            multimédia (montage vidéo, illustrator, photoshop), des cours de programmation ou j’ai pu découvrir mon premier language de programmation qui était le python ainsi que des cours de système et réseaux.</p>
                         <button class="studies__button">Voir site</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="hobbies reveal">
+    <section class="hobbies reveal" id="hobbies">
         <div class="hobbies__left">
             <h2 class="hobbies__title">En dehors Du web</h2>
-            <p class="hobbies__text">Dans la vie J’aime la <strong>musique</strong> en particulier la
+            <p class="hobbies__text">Dans la vie j’aime la <strong>musique</strong> en particulier la
                 <strong>batterie</strong>. J’aime aussi le <strong>sport</strong>, je pratique le <strong>tennis de
-                    table</strong>, le <strong>VTT</strong> et la <strong>course a pieds</strong>.</p>
+                    table</strong>, le <strong>VTT</strong> et la <strong>course à pieds</strong>.</p>
             <button class="hobbies__button">En savoir plus</button>
         </div>
         <div class="hobbies__right">
-            <img src="./src/img/activités/hobbies.png" alt="" class="hobbies__img">
+            <img src="./src/img/activites/hobbies.png" alt="" class="hobbies__img">
         </div>
     </section>
     <section class="gallery reveal">
-        <h2 class="gallery__title hidden">gallerie de photos</h2>
-        <ul class="gallery__list">
-            <li class="gallery__item"><img src="./src/img/activités/activite_1.jpg" alt="" class="gallery__img"></li>
-            <li class="gallery__item"><img src="./src/img/activités/activite_3.jpg" alt="" class="gallery__img"></li>
-            <li class="gallery__item"><img src="./src/img/activités/activite_4.jpg" alt="" class="gallery__img"></li>
-            <li class="gallery__item"><img src="./src/img/activités/activite_2.jpg" alt="" class="gallery__img"></li>
-            <li class="gallery__item"><img src="./src/img/activités/activite_5.png" alt="" class="gallery__img"></li>
+        <h2 class="gallery__title hidden">Galerie de photos</h2>
+        <ul class="gallery__list slider">
+            <li class="gallery__item"><img src="./src/img/activites/activite_1.jpg" alt="" class="gallery__img"></li>
+            <li class="gallery__item"><img src="./src/img/activites/activite_3.jpg" alt="" class="gallery__img"></li>
+            <li class="gallery__item"><img src="./src/img/activites/activite_4.jpg" alt="" class="gallery__img"></li>
+            <li class="gallery__item"><img src="./src/img/activites/activite_2.jpg" alt="" class="gallery__img"></li>
+            <li class="gallery__item"><img src="./src/img/activites/activite_5.png" alt="" class="gallery__img"></li>
         </ul>
     </section>
-    <section class="projects reveal">
+    <section class="projects reveal" id="projects">
         <h2 class="projects__title">Projets en cours</h2>
         <ul class="projects__list">
             <li class="projects__item">
                 <img src="./src/img/projets/projet-portfolio.png" alt="" class="projects__img">
-                <p class="projects__text">Creation d'un portfolio</p>
+                <p class="projects__text">Création d'un portfolio</p>
                 <p class="projects__hashtags">#dw #projects</p>
             </li>
             <li class="projects__item">
                 <img src="./src/img/projets/projet-cv.png" alt="" class="projects__img">
-                <p class="projects__text">Creation d'un portfolio</p>
-                <p class="projects__hashtags">#dw #projects</p>
-            </li>
-            <li class="projects__item">
-                <img src="./src/img/projets/projet-portfolio.png" alt="" class="projects__img">
-                <p class="projects__text">Creation d'un portfolio</p>
+                <p class="projects__text">Création d'un CV en ligne</p>
                 <p class="projects__hashtags">#dw #projects</p>
             </li>
             <li class="projects__item">
                 <img src="./src/img/projets/projet-sncb.jpeg" alt="" class="projects__img">
-                <p class="projects__text">Creation d'un portfolio</p>
+                <p class="projects__text">Analyse d'un site</p>
+                <p class="projects__hashtags">#dw #projects</p>
+            </li>
+            <li class="projects__item">
+                <img src="./src/img/projets/projet-portfolio.png" alt="" class="projects__img">
+                <p class="projects__text">Création d'un vrai site client</p>
                 <p class="projects__hashtags">#dw #projects</p>
             </li>
         </ul>
     </section>
 </main>
 
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="footer__container">
         <ul class="footer__list">
             <li class="footer__item footer__title">Navigation</li>
-            <li class="footer__item"><a href="" class="footer__link">Revenir en haut</a></li>
-            <li class="footer__item"><a href="" class="footer__link">Présentation</a></li>
-            <li class="footer__item"><a href="" class="footer__link">Boite a outils</a></li>
-            <li class="footer__item"><a href="" class="footer__link">Metier</a></li>
-            <li class="footer__item"><a href="" class="footer__link">Avis</a></li>
-            <li class="footer__item"><a href="" class="footer__link">Parcours scolaire</a></li>
-            <li class="footer__item"><a href="" class="footer__link">Passions</a></li>
-            <li class="footer__item"><a href="" class="footer__link">Projets</a></li>
+            <li class="footer__item"><a href="#top" class="footer__link">Revenir en haut</a></li>
+            <li class="footer__item"><a href="#presentation" class="footer__link">Présentation</a></li>
+            <li class="footer__item"><a href="#outils" class="footer__link">Boite à outils</a></li>
+            <li class="footer__item"><a href="#web" class="footer__link">Métier</a></li>
+            <li class="footer__item"><a href="#comments" class="footer__link">Avis</a></li>
+            <li class="footer__item"><a href="#studies" class="footer__link">Parcours scolaire</a></li>
+            <li class="footer__item"><a href="#hobbies" class="footer__link">Passions</a></li>
+            <li class="footer__item"><a href="#projects" class="footer__link">Projets</a></li>
         </ul>
         <ul class="footer__list">
             <li class="footer__item footer__title">D'autres liens</li>
-            <li class="footer__item"><a href="" class="footer__link">justin-vincent.be</a></li>
-            <li class="footer__item"><a href="" class="footer__link">justin-vincent.be/captair</a></li>
+            <li class="footer__item"><a href="justin-vincent.be" target="_blank" class="footer__link">justin-vincent.be</a></li>
+            <li class="footer__item"><a href="captair.justin-vincent.be" target="_blank" class="footer__link">captair.justin-vincent.be</a></li>
         </ul>
         <ul class="footer__list">
             <li class="footer__item footer__title">Contactez-moi</li>
             <li class="footer__item"><a href="" class="footer__link">justin.20cen@gmail.com</a></li>
-            <li class="footer__item"><a href="" class="footer__link">justin.vincent#student.hepl.be</a></li>
+            <li class="footer__item"><a href="" class="footer__link">justin.vincent@student.hepl.be</a></li>
             <li class="footer__item"><a href="" class="footer__link">04 84 30 34 67</a></li>
         </ul>
         <ul class="footer__list">
             <li class="footer__item footer__title">Follow moi</li>
-            <li class="footer__item"><a href="" class="footer__link">github</a></li>
-            <li class="footer__item"><a href="" class="footer__link">behance</a></li>
-            <li class="footer__item"><a href="" class="footer__link">instagram</a></li>
+            <li class="footer__item"><a href="https://github.com/justin20100?tab=repositories" target="_blank" class="footer__link">github</a></li>
+            <li class="footer__item"><a href="https://www.behance.net/justinvincent1" target="_blank" class="footer__link">behance</a></li>
+            <li class="footer__item"><a href="https://www.instagram.com/_justinvincent_/" target="_blank" class="footer__link">instagram</a></li>
         </ul>
     </div>
 </footer>
