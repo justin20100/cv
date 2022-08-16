@@ -19,17 +19,30 @@ document.querySelectorAll('.reveal').forEach(function (r){
 })
 
 /* slider */
-let sliderObserver = new IntersectionObserver(function (entries){
-    entries.forEach((function (entry){
+const sliderinfos ={
+    root: null,
+    rootMargin: '-100px',
+    threshold: .1
+}
+const sliderObserver = function (entries, slider){
+    entries.forEach(function (entry){
         setInterval(()=>{
-            scrollSave = entry.target.scrollLeft;
             entry.target.scrollLeft+=1;
         },100)
-    }))
-},{
-    threshold: [0.5],
+
+    })
+}
+const slider = new IntersectionObserver(sliderObserver, sliderinfos);
+document.querySelectorAll('.slider').forEach(function (r){
+    slider.observe(r);
 })
-let sliders = document.querySelectorAll('.slider')
-sliders.forEach(function (slider){
-    sliderObserver.observe(slider);
-})
+
+/* menu */
+function toggleMenu () {
+    const navbar = document.querySelector('.navbar');
+    const burger = document.querySelector('.burger');
+    burger.addEventListener('click', (e) => {
+        navbar.classList.toggle('show-nav');
+    });
+}
+toggleMenu();
